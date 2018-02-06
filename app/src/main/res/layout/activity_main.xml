@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:id="@+id/scrollView"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp" >
+
+        <TextView
+            android:id="@+id/welcomeText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="11dp"
+            android:text="This is my first Quiz App"
+            android:textSize="@dimen/textSize"/>
+
+        <LinearLayout
+            android:id="@+id/getReadyLinearLayout"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/welcomeText"
+            android:layout_alignParentLeft="true"
+            android:padding="5dp">
+
+            <TextView
+                android:id="@+id/getReadytextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:text="Get ready for the test!"
+                android:textSize="16sp" />
+
+            <android.support.v7.widget.AppCompatImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="5dp"
+                android:src="@mipmap/ic_bag" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/nameLinearLayout"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/getReadyLinearLayout"
+            android:layout_alignParentLeft="true">
+
+            <TextView
+                android:id="@+id/nametextView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:text="What is your name?"
+                android:textSize="@dimen/textSize"/>
+
+            <EditText
+                android:id="@+id/nameEditText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:textSize="16sp"
+                android:inputType="textPersonName"
+                android:text="Name" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/questionsLinearLayout"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/nameLinearLayout">
+
+            <TextView
+                android:id="@+id/question1textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text="What is the capital of Greece?"
+                android:textSize="@dimen/textSize"/>
+
+            <RadioGroup
+                android:id="@+id/question1RadioGroup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    android:id="@+id/question1radioButton1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Ancara"
+                    android:textSize="@dimen/textSize" />
+                <RadioButton
+                    android:id="@+id/question1radioButton2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Athens"
+                    android:textSize="@dimen/textSize" />
+                <RadioButton
+                    android:id="@+id/question1radioButton3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Paris"
+                    android:textSize="@dimen/textSize"/>
+
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/question2textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:paddingTop="10dp"
+                android:text="Which of the following are Greek cities?"
+                android:textSize="@dimen/textSize"/>
+
+            <CheckBox
+                android:id="@+id/checkBoxAnswer1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Corfu"
+                android:textSize="@dimen/textSize"/>
+            <CheckBox
+                android:id="@+id/checkBoxAnswer2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="London"
+                android:textSize="@dimen/textSize"/>
+            <CheckBox
+                android:id="@+id/checkBoxAnswer3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Lamia"
+                android:textSize="@dimen/textSize"/>
+
+            <TextView
+                android:id="@+id/question3textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text="What is the capital of Spain?"
+                android:textSize="@dimen/textSize"/>
+
+            <RadioGroup
+                android:id="@+id/question3RadioGroup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <RadioButton
+                    android:id="@+id/question3radioButton1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Madrid"
+                    android:textSize="@dimen/textSize" />
+                <RadioButton
+                    android:id="@+id/question3radioButton2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Thessaloniki"
+                    android:textSize="@dimen/textSize" />
+                <RadioButton
+                    android:id="@+id/question3radioButton3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Paris"
+                    android:textSize="@dimen/textSize"/>
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/question4textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text="What is the capital of Finland?"
+                android:textSize="@dimen/textSize"/>
+            <RadioGroup
+                android:id="@+id/question4RadioGroup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <RadioButton
+                    android:id="@+id/question4radioButton1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Bombai"
+                    android:textSize="@dimen/textSize"/>
+                <RadioButton
+                    android:id="@+id/question4radioButton2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Moscow"
+                    android:textSize="@dimen/textSize"/>
+                <RadioButton
+                    android:id="@+id/question4radioButton3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/question4answer3" />
+            </RadioGroup>
+        </LinearLayout>
+        <Button
+            android:id="@+id/button"
+            android:layout_below="@id/questionsLinearLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/submit"
+            android:layout_centerHorizontal="true"/>
+    </RelativeLayout>
+
+</ScrollView>
